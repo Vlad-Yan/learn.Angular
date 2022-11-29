@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-
+      
 @Component({
     selector: 'my-app',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
-
+    template: `<child-comp><h2>Добро пожаловать {{name}}!</h2></child-comp>`,
+    styles: [`h2, p {color:#333;}`]
 })
 export class AppComponent { 
-    name= '';
+    name = 'Tom';
 }
